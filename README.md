@@ -1,2 +1,0 @@
-# sdtest
-Created with CodeSandbox
