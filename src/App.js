@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./styles.css";
 import * as THREE from "three";
 
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Container from "react-bootstrap/Container";
+
 class App extends Component {
   componentDidMount() {
     var scene = new THREE.Scene();
@@ -34,8 +37,19 @@ class App extends Component {
 
     animate();
   }
+
   render() {
-    return <div ref={ref => (this.mount = ref)} />;
+    return (
+      <Container className="p-3">
+        <Jumbotron>
+          <h1 className="header">Welcome To React-Bootstrap</h1>
+        </Jumbotron>
+        <Jumbotron>
+          <div ref={ref => (this.mount = ref)} />;
+        </Jumbotron>
+      </Container>
+    );
+    //return
   }
 }
 
