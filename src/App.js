@@ -42,7 +42,7 @@ class App extends Component {
     return (
       <Container className="p-3">
         <Jumbotron>
-          <h1 className="header">Welcome To React-Bootstrap</h1>
+          <h1 className="header">Welcome To Jeetas</h1>
         </Jumbotron>
         <Jumbotron>
           <div ref={ref => (this.mount = ref)} />;
